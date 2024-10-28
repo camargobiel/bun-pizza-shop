@@ -34,6 +34,9 @@ const app = new Elysia()
       case 'VALIDATION':
         set.status = error.status
         return error.toResponse()
+      case 'NOT_FOUND':
+        set.status = 404
+        return new Response(null, { status: 404 })
       default:
         set.status = 500
         console.error(chalk.redBright(error))
