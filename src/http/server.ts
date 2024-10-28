@@ -9,6 +9,9 @@ import { getManagedProfile } from './routes/get-managed-restaurant'
 import { createRestaurant } from './routes/create-restaurant'
 import { getOrderDetails } from './routes/get-order-details'
 import { approveOrder } from './routes/approve-order'
+import { cancelOrder } from './routes/cancel-order'
+import { deliverOrder } from './routes/deliver-order'
+import { dispatchOrder } from './routes/dispatch-order'
 
 const PORT = env.PORT || '3333'
 
@@ -21,6 +24,9 @@ const app = new Elysia()
   .use(getManagedProfile)
   .use(getOrderDetails)
   .use(approveOrder)
+  .use(cancelOrder)
+  .use(deliverOrder)
+  .use(dispatchOrder)
   .onError(({ code, error, set }) => {
     switch (code) {
       case 'VALIDATION':
