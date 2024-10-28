@@ -64,6 +64,20 @@
       "when": 1730114547055,
       "tag": "0008_lucky_moondragon",
       "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1730117509776,
+      "tag": "0009_nervous_sabretooth",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1730118633290,
+      "tag": "0010_silent_midnight",
+      "breakpoints": true
     }
   ]
 }
